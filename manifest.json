@@ -1,22 +1,23 @@
 {
 	"files": {
-		"README.md": "860a08562a9fad87096e57bb50b6f665b44a92b2d56fccb46f5a10bbc04f7813",
+		"Loot.js": "87e4efc0f11beb9dda3c24dfa095a6639c02fa4f582c0f5db66f7d52f619ae9d",
+		"README.md": "48f883ad90146aef308c45be447ea5ae852675a560772a4313568adbcb1918c9",
 		"config.json": {
-			"hash": "49e97a17a4f48d5598358d4d624c589232d6d6725235dc3bc8ae08dc630a5d80",
+			"hash": "ea14df28f35cdd683f3ef07d4c8a6a4f745100af5ea38f00eaa75719092a2b86",
 			"overwrite": false
-		},
-		"index.js": "5b0800278a36fd605d3326f2fb6ca0576652d9f70e5cc0de428199f2a7ed1626",
-		"module.json": "133ec61af79ada0d43971b6c754aa59ae62cc2b0e5f2d98fb7e981e7d6f75a46"
+		"index.js": "d4bc468f9afcb63d5318fc3f082068e0cad6b5a0d8845bad3679f0a08095caa7",
+		"module.json": "19adc47efe5de11c02d457ecc980a92a39c60688c2b9a03672f077ca70eaeb50"
 	},
 	"defs": {
-		"C_DEL_ITEM": 2,
-		"C_MERGE_ITEM": 1,
-		"C_PLAYER_LOCATION": 5,
-		"C_RETURN_TO_LOBBY": "raw",
-		"C_USE_ITEM": 3,
-		"S_INVEN": 16,
+		"C_PLAYER_LOCATION": 3,
+		"C_TRY_LOOT_DROPITEM": [1,4],
+		"S_CREATURE_LIFE": 2,
+		"S_DESPAWN_DROPITEM": 4,
+		"S_LOAD_TOPO": 3,
 		"S_LOGIN": 10,
-		"S_SPAWN_ME": 3,
-		"S_SYSTEM_MESSAGE_LOOT_ITEM": 1
+		"S_MOUNT_VEHICLE": 2,
+		"S_SPAWN_DROPITEM": 6,
+		"S_SPAWN_ME": 2,
+		"S_UNMOUNT_VEHICLE": 2
 	}
 }
