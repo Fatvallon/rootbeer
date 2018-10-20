@@ -1,9 +1,10 @@
 {
 	"files": {
 		"README.md": "860a08562a9fad87096e57bb50b6f665b44a92b2d56fccb46f5a10bbc04f7813",
-		"config.json": "49e97a17a4f48d5598358d4d624c589232d6d6725235dc3bc8ae08dc630a5d80",
 		"index.js": "5b0800278a36fd605d3326f2fb6ca0576652d9f70e5cc0de428199f2a7ed1626",
 		"module.json": "133ec61af79ada0d43971b6c754aa59ae62cc2b0e5f2d98fb7e981e7d6f75a46"
+		"config.json": { "overwrite" : false, "hash" : "49e97a17a4f48d5598358d4d624c589232d6d6725235dc3bc8ae08dc630a5d80" }
+},
 	},
 	"defs": {
 		"C_DEL_ITEM": 2,
