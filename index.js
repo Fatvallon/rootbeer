@@ -13,10 +13,7 @@ const BAMARAMA_BOX = 80086,
 	HATS = [80089, 80090], // Afro, Chef's
 	ITEMS = [ROOT_BEER, ...Object.keys(TRASH).map(id => Number(id))]
 
-const Command = require('command')
-
 module.exports = function RootBeer(dispatch) {
-	const command = Command(dispatch)
 
 	let hooks = [],
 		gameId = null,
@@ -27,11 +24,11 @@ module.exports = function RootBeer(dispatch) {
 		statRootBeers = 0,
 		invenHook = null
 
-	command.add('rootbeer', () => {
+	dispatch.command.add('rootbeer', () => {
 		if(enabled = !enabled) {
 			load()
 			openBox()
-			command.message('Auto-Rootbeer started.')
+			dispatch.command.message('Auto-Rootbeer started.')
 		}
 		else stop()
 	})
@@ -57,7 +54,7 @@ module.exports = function RootBeer(dispatch) {
 		clearTimeout(timer)
 		unload()
 		enabled = false
-		command.message('Auto-Rootbeer stopped.' + (!statTotal ? '' : ` Unboxed ${statRootBeers}/${statTotal} (${(Math.floor(statRootBeers / statTotal * 1000) / 10) || '0'}%).`))
+		dispatch.command.message('Auto-Rootbeer stopped.' + (!statTotal ? '' : ` Unboxed ${statRootBeers}/${statTotal} (${(Math.floor(statRootBeers / statTotal * 1000) / 10) || '0'}%).`))
 		statTotal = statRootBeers = 0
 	}
 
